@@ -1,0 +1,1135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(28, 146, 28);
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.logo img{
+    height: 100px;
+    display: flex;
+    float: left;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1{
+    padding-right: 90px;
+    padding-top: 40px;
+    display: flex;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #333;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+nav{
+    background-color: rgb(51, 51, 51);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-horizontal li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;  
+}
+
+.menu-horizontal li:hover{
+    background-color: red;
+}
+
+body{
+    background-image: url(../img/logo\ Cola\ De\ Sapo\ Con\ Fondo.png);
+    background-size: cover;
+    height: 500px;
+    
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+    
+
+}
+
+main{
+    
+    min-height: 230vh
+    
+}
+.subtitulo{
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: wheat;
+    margin-top: 50px;
+}
+
+.fondo{
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.video{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h2.titulo{
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: bold; line-height: 22.4px;
+    margin-top: 20px;
+    color: wheat;
+    margin-bottom: 20px;
+}
+
+.fondo2{
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+.video__Izq{
+    text-align: left;
+    margin-right: 30px;
+    margin-left: 75px;
+    height: 300px;
+
+}
+
+.video__Cen{
+    text-align: center;
+    margin-right: 30px;
+    height: 300px;
+    width: 500px;
+}
+
+.video__Der{
+    text-align: right;
+    height: 300px;
+}
+
+.galeria{
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+h2.galeria{
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: wheat;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    background-color: rgb(28, 146, 28);
+}
+
+footer a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+}
+
+.fa-youtube{
+    color: red;
+    font-size: 45px;
+}
+
+.fa-instagram{
+    color: blueviolet;
+    font-size: 45px;
+}
+
+footer i:hover{
+    color: wheat;
+}
+
+
+
+
+/* ------------------------------------------------ index ----------------------------------------------- */
+
+
+
+p.titulo2{
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: wheat;
+    margin-top: 20px;
+}
+
+div.contenedor{
+    background-color: rgba(0, 0, 0, 0.205);
+    padding-top: 20px;
+}
+
+p.biografia{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+    color: white;
+}
+
+p.banda{
+    margin-top: 30px;
+    text-align: left;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 22px;
+    color: wheat;
+}
+
+
+p.texto{
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 22px;
+    color: white;
+    margin-top: 40px;
+}
+
+div.foto{
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 20px; */
+    background-color: rgba(0, 0, 0, 0.212);
+    /* float: left; */
+}
+
+p.integrantes{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: wheat;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+/* ----------------------------------------------- Nosotros --------------------------------------------------- */
+
+
+table{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla__txtTitulo{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: greenyellow;
+    border: solid 2.5px rgb(77, 15, 15);
+    background-color: #333;
+}
+
+.tabla__txtDer{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    border: solid 2.5px rgb(77, 15, 15);
+    background-color: #333;
+    color: red;
+}
+
+.tabla__txtCen{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    border: solid 2.5px rgb(77, 15, 15);
+    background-color: #333;
+    color: red;
+}
+
+.tabla__txtIzq{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: red;
+    background-color: #333;
+    border: solid 2.5px rgb(77, 15, 15);
+}
+  
+p.fechas{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    color: wheat;
+    text-align: center;
+    margin-top: 20px 20px;
+    padding: 50px 30px;
+
+
+}
+
+.parrafo{
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+/* -------------------------------------------------- Fechas --------------------------------------------------------- */
+
+/* media queries */
+
+/* --------------------------------------------------Media Queries--------------------------------------------- */
+
+
+@media (max-width:1200px) {
+    .container{
+        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 17em;
+        grid-gap: 5px;
+        width: 40em;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 190px;
+    }
+
+    
+    .video__Izq{
+        width: 40em;
+        margin-left: 17em;
+        margin-top: 20px;
+    }
+
+    .video__Cen{
+        width: 40em;
+        margin-left: 17em;
+        margin-top: 20px;
+    }
+
+    .video__Der{
+        width: 40em;
+        margin-left: 17em;
+        margin-top: 20px;
+    }
+}
+
+/* ------------------------------------------------------1024px----------------------------------------------------- */
+@media (max-width:1024px) {
+    header{
+        width: 185%;
+    }
+
+    
+    .menu-horizontal a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu-horizontal li a{
+        padding: 5px 5px;
+    }
+
+
+    .fondo{
+        width: 185%;
+    }
+
+    .video{
+        width: 185%;
+        /* margin-left: 30px; */
+    }
+
+    .video__Izq{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .video__Cen{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .video__Der{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .fondo2{
+        width: 185%;
+    }
+
+
+    .container{
+        grid-template-rows: 350px 350px 350px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 130px;
+        width: 150%;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 700px;
+    }
+
+    .item{
+        filter: none;
+    }
+
+    .galeria{
+        width: 130%;
+    }
+
+    footer{
+        width: 185%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 30px;
+    }
+
+    .fa-youtube{
+        font-size: 30px;
+    }
+
+    .fa-instagram{
+        font-size: 30px;
+    }
+/* ---------------------------------------------------index--------------------------------------------------------- */
+
+.titulo2{
+    width: 185%;
+    }
+
+    .contenedor{
+        width: 185%;
+    }
+
+    
+    .contenedor p{
+        font-size: 18px;
+    }
+
+    p.integrantes{
+        width: 185%;
+    }
+
+    div.foto{
+        width: 185%;
+        margin-right: 500px;
+    }
+
+    p.texto{
+        font-size: 18px;
+    }
+
+    p.banda{
+        font-size: 18px;
+    }
+/* ----------------------------------------------------nosotros------------------------------------------------------ */
+
+
+    
+.parrafo{
+    width: 185%;
+}
+
+table{
+    width: 185%;
+}
+
+.tabla__txtTitulo{
+    font-size: 30px;
+}
+
+.tabla__txtIzq{
+    font-size: 30px;
+}
+
+
+.tabla__txtCen{
+    font-size: 30px;
+}
+
+
+.tabla__txtDer{
+    font-size: 30px;
+}
+
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------1023px------------------------------------------------------------ */
+@media (max-width:1023px) {
+    header{
+        width: 185%;
+    }
+
+    
+    .menu-horizontal a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu-horizontal li a{
+        padding: 5px 5px;
+    }
+
+
+    .fondo{
+        width: 185%;
+    }
+
+    .video{
+        width: 185%;
+        /* margin-left: 30px; */
+    }
+
+    .video__Izq{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .video__Cen{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .video__Der{
+        width: 175%;
+        margin-left: 50px;
+    }
+
+    .fondo2{
+        width: 185%;
+    }
+
+    .video__Izq{
+        background-color: red;
+    }
+
+    .container{
+        grid-template-rows: 280px 280px 280px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 130px;
+        width: 150%;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 500px;
+    }
+
+    .item{
+        filter: none;
+    }
+
+    .galeria{
+        width: 130%;
+    }
+
+    footer{
+        width: 185%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
+    .fa-youtube{
+        font-size: 15px;
+    }
+
+    .fa-instagram{
+        font-size: 15px;
+    }
+    /* -----------------------------------------------index----------------------------------------------------------- */
+
+    .titulo2{
+        width: 185%;
+        }
+    
+        .contenedor{
+            width: 185%;
+        }
+    
+        
+        .contenedor p{
+            font-size: 18px;
+        }
+    
+        p.integrantes{
+            width: 185%;
+        }
+    
+        div.foto{
+            width: 185%;
+            margin-right: 500px;
+        }
+    
+        p.texto{
+            font-size: 18px;
+        }
+    
+        p.banda{
+            font-size: 18px;
+        }
+    /* ---------------------------------------------------nosotros---------------------------------------------------- */
+
+    
+.parrafo{
+    width: 185%;
+}
+
+table{
+    width: 185%;
+}
+
+.tabla__txtTitulo{
+    font-size: 30px;
+}
+
+.tabla__txtIzq{
+    font-size: 30px;
+}
+
+
+.tabla__txtCen{
+    font-size: 30px;
+}
+
+
+.tabla__txtDer{
+    font-size: 30px;
+}
+
+}
+
+
+/* -----------------------------------------------768px-------------------------------------------------------------- */
+@media (max-width:768px) {
+    header{
+        width: 185%;
+    }
+
+    
+    .menu-horizontal a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu-horizontal li a{
+        padding: 5px 5px;
+    }
+
+
+    .fondo{
+        width: 185%;
+    }
+
+    .video{
+        width: 185%;
+        /* margin-left: 30px; */
+    }
+
+    .fondo2{
+        width: 185%;
+    }
+
+    .video__Cen{
+        width: 172%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .video__Izq{
+        width: 172%;
+        margin-left: 50px;
+    }
+
+    .video__Der{
+        width: 172%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .container{
+        grid-template-rows: 280px 280px 280px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 130px;
+        width: 150%;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 500px;
+    }
+
+    .item{
+        filter: none;
+    }
+
+    .galeria{
+        width: 130%;
+    }
+
+    footer{
+        width: 185%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
+    .fa-youtube{
+        font-size: 15px;
+    }
+
+    .fa-instagram{
+        font-size: 15px;
+    }
+/* ---------------------------------------------------------index----------------------------------------------------- */
+.titulo2{
+    width: 185%;
+    }
+
+    .contenedor{
+        width: 185%;
+    }
+
+    
+    .contenedor p{
+        font-size: 18px;
+    }
+
+    p.integrantes{
+        width: 185%;
+    }
+
+    div.foto{
+        width: 185%;
+        margin-right: 500px;
+    }
+
+    p.texto{
+        font-size: 18px;
+    }
+
+    p.banda{
+        font-size: 18px;
+    }
+
+    /* -----------------------------------------------------nosotros------------------------------------------------- */
+
+    
+    .parrafo{
+        width: 185%;
+    }
+    
+    table{
+        width: 185%;
+    }
+    
+    .tabla__txtTitulo{
+        font-size: 18px;
+    }
+    
+    .tabla__txtIzq{
+        font-size: 18px;
+    }
+    
+    
+    .tabla__txtCen{
+        font-size: 18px;
+    }
+    
+    
+    .tabla__txtDer{
+        font-size: 18px;
+    }
+
+    /* -----------------------------------------------------768px---------------------------------------------------- */
+}
+
+
+@media (max-width:600px) {
+    .titulo2{
+    width: 185%;
+    }
+
+    .contenedor{
+        width: 185%;
+    }
+
+    
+    .contenedor p{
+        font-size: 18px;
+    }
+
+    p.integrantes{
+        width: 185%;
+    }
+
+    div.foto{
+        width: 185%;
+        margin-right: 500px;
+    }
+
+    p.texto{
+        font-size: 18px;
+    }
+
+    p.banda{
+        font-size: 18px;
+    }
+
+    /* ------------------------------------------------nosotros------------------------------------------------------- */
+
+
+    .parrafo{
+        width: 185%;
+    }
+    
+    table{
+        width: 185%;
+    }
+    
+    .tabla__txtTitulo{
+        font-size: 18px;
+    }
+    
+    .tabla__txtIzq{
+        font-size: 18px;
+    }
+    
+    
+    .tabla__txtCen{
+        font-size: 18px;
+    }
+    
+    
+    .tabla__txtDer{
+        font-size: 18px;
+    }
+}
+
+/* ---------------------------------------------------600px---------------------------------------------------------- */
+
+
+
+
+@media (max-width: 480px) {
+    header{
+        width: 190%;
+    }
+
+    
+    .menu-horizontal a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .menu-horizontal li a{
+        padding: 2px 2px;
+    }
+
+
+    .fondo{
+        width: 185%;
+    }
+
+    .video{
+        width: 185%;
+        /* margin-left: 30px; */
+    }
+
+    .fondo2{
+        width: 185%;
+    }
+
+    .video__Cen{
+        width: 172%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .video__Izq{
+        width: 172%;
+        /* margin-left: 50px; */
+    }
+
+    .video__Der{
+        width: 172%;
+        /* margin-left: 50px; */
+        margin-top: 20px;
+    }
+    
+    .container{
+        grid-template-rows: 170px 170px 170px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 70px;
+        width: 150%;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+
+    .item{
+        filter: none;
+    }
+
+    .galeria{
+        width: 130%;
+    }
+
+    footer{
+        width: 190%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
+    .fa-youtube{
+        font-size: 15px;
+    }
+
+    .fa-instagram{
+        font-size: 15px;
+    }
+
+    /* ------------------------------------------------------index---------------------------------------------------- */
+
+    
+    .titulo2{
+        width: 190%;
+    }
+
+    .contenedor{
+        width: 190%;
+    }
+
+    .contenedor p{
+        font-size: 10px;
+    }
+
+    p.integrantes{
+        width: 190%;
+    }
+
+    div.foto{
+        width: 190%;
+        margin-right: 500px;
+    }
+
+    p.texto{
+        font-size: 15px;
+    }
+
+    p.banda{
+        font-size: 15px;
+    }
+/* ------------------------------------------------------nosotros----------------------------------------------------- */
+
+.parrafo{
+    width: 190%;
+}
+
+table{
+    width: 190%;
+}
+
+.tabla__txtTitulo{
+    font-size: 10px;
+}
+
+.tabla__txtIzq{
+    font-size: 10px;
+}
+
+
+.tabla__txtCen{
+    font-size: 10px;
+}
+
+
+.tabla__txtDer{
+    font-size: 10px;
+}
+
+}
+
+/* ------------------------------------------------fechas------------------------------------------------------------- */
+/* --------------------------------------------------------480px--------------------------------------------------------*/
+
+@media (max-width:320px) {
+    .menu-horizontal{
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    .logo{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .logo a{
+        text-align: center;
+    }
+
+    .menu-horizontal a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .menu-horizontal li a{
+        padding: 2px 2px;
+    }
+
+    header{
+        width: 350px;
+    }
+
+
+    .fondo{
+        width: 350px;
+    }
+
+    .video{
+        width: 350px;
+    }
+    
+    .fondo2{
+        width: 350px;
+    }
+
+    .galeria{
+        width: 280px;
+    }
+
+    .container{
+        grid-template-rows: 130px 130px 130px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2px;
+        width: 350px;
+        height: 430px;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .item{
+        filter: none;
+    }
+
+    .video__Cen{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .video__Izq{
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .video__Der{
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    footer{
+        width: 350px;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
+    .fa-youtube{
+        font-size: 15px;
+    }
+
+    .fa-instagram{
+        font-size: 15px;
+    }
+    /* ---------------------------------------------index------------------------------------------------------------ */
+
+    .titulo2{
+        width: 350px;
+    }
+
+    .contenedor{
+        width: 350px;
+    }
+
+    .contenedor p{
+        font-size: 10px;
+    }
+
+    p.integrantes{
+        width: 350px;
+    }
+
+    div.foto{
+        width: 350px;
+        margin-right: 500px;
+    }
+
+    p.texto{
+        font-size: 10px;
+    }
+
+    p.banda{
+        font-size: 10px;
+    }
+
+    /* ------------------------------------------Nosotros----------------------------------------------------------- */
+
+    table{
+        width: 350px;
+    }
+
+    .parrafo{
+        width: 350px;
+    }
+
+    .tabla__txtTitulo{
+        font-size: 10px;
+    }
+
+    .tabla__txtIzq{
+        font-size: 10px;
+    }
+
+
+    .tabla__txtCen{
+        font-size: 10px;
+    }
+
+
+    .tabla__txtDer{
+        font-size: 10px;
+    }
+
+    /* --------------------------------------------Fechas------------------------------------------------------------- */
+}
+
+/* ----------------------------------------------320px-------------------------------------------------------------- */
