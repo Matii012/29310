@@ -150,6 +150,62 @@ h2.galeria{
 }
 
 
+.container {  display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin-left: 300px;
+    height: 200px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "img img img2"
+    "img img img3"
+    "img4 img4 img5";
+}
+
+.img { grid-area: img;
+        background-image: url(../img/todos.png);
+        background-position: center;
+        background-size: cover;
+}
+
+.img2 { grid-area: img2;
+            background-image: url(../img/baterista.png);
+            background-position: center;
+            background-size: cover;
+}
+
+.img3 { grid-area: img3;
+        background-image: url(../img/bajista.png);
+        background-position: center;
+        background-size: cover;
+}
+
+.img4 { grid-area: img4;
+        background-image: url(../img/cantante1.JPG);
+        background-position: center;
+        background-size: cover;
+}
+
+.img5 { grid-area: img5;
+    background-image: url(../img/pianista.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.item{
+    border: 2px solid wheat;
+    border-radius: 2%;
+    filter: grayscale(100%);
+    transition: all 0.7s;
+}
+
+.item:hover{
+    transform:scale(1.05);
+    filter: grayscale(0%);
+}
+
 footer{
     display: flex;
     justify-content: space-around;
