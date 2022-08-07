@@ -18,27 +18,33 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="img/logo CS.png" alt="Logo Banda"><h1>Cola De Sapo</h1>
+                <img src="img/logo CS.png" alt="logo de banda">
             </a>
         </div>
-        <nav>
-            <ul class="menu-horizontal">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="pag/nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="pag/fechas.html">Proximas Fechas</a>
-                </li>
-                <li>
-                    <a href="pag/tienda.html">Tienda</a>
-                </li>
-                <li>
-                    <a href="pag/contactanos.html">Contactanos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1>Cola De Sapo</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/fechas.html">Fechas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Cabecera -->
@@ -47,7 +53,7 @@
             <h2 class="subtitulo animate__animated animate__bounceInLeft">Ultimos Lanzamientos</h2>
         </div>
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kqKmrMEFTm8" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="principal" width="350" height="315" src="https://www.youtube.com/embed/kqKmrMEFTm8" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="fondo2">
@@ -75,10 +81,11 @@
         <div class="img4 item"></div>
         <div class="img5 item"></div>
     </div>
+
     </main>
     <!-- Menu -->
 
-    <footer>
+    <footer class="ms-auto my-2 my-lg-0">
         <a href="https://www.youtube.com/channel/UCNG_ps1Oq4mcQYJjlXGzbTg">YouTube <i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.instagram.com/coladesapo_rock/">Instagram <i class="fa-brands fa-instagram"></i></a>
     </footer>

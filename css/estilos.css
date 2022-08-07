@@ -156,8 +156,9 @@ h2.galeria{
     grid-template-rows: 300px 300px 300px 300px;
     grid-auto-flow: row;
     justify-content: center;
-    margin-left: 250px;
-    height: 200px;
+    height: 100px;
+    width: 100px;
+    margin-right: 35%;
     grid-gap: 10px;
     grid-template-areas:
     "img img img2"
@@ -235,6 +236,8 @@ footer a{
 footer i:hover{
     color: wheat;
 }
+
+
 
 
 
@@ -365,6 +368,24 @@ p.fechas{
 
 /* -------------------------------------------------- Fechas --------------------------------------------------------- */
 
+textarea{
+    resize: none;
+}
+
+/* ------------------------------- contactanos ------------------------------ */
+
+.tienda{
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.452);
+    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-style: italic;
+    font-variant: normal; font-weight: 700;
+    color: wheat;
+}
+
+/* --------------------------------- tienda --------------------------------- */
+
 /* media queries */
 
 /* --------------------------------------------------Media Queries--------------------------------------------- */
@@ -428,18 +449,18 @@ p.fechas{
     }
 
     .video__Izq{
-        width: 80%;
-        margin-left: 100px;
+        width: 50%;
+        /* margin-left: 100px; */
     }
 
     .video__Cen{
-        width: 80%;
-        margin-left: 100px;
+        width: 50%;
+        /* margin-left: 100px; */
     }
 
     .video__Der{
-        width: 80%;
-        margin-left: 100px;
+        width: 50%;
+        /* margin-left: 100px; */
     }
 
     .fondo2{
@@ -450,7 +471,7 @@ p.fechas{
     .container{
         grid-template-rows: 350px 350px 350px;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 0px;
+        margin-left: 5%;
         width: 100%;
         height: 430px;
         margin-top: 20px;
@@ -462,8 +483,11 @@ p.fechas{
     }
 
     .galeria{
-        width: 100%;
+        width: 50%;
+        margin-left: 25%;
     }
+
+
 
     footer{
         width: 100%;
@@ -577,18 +601,18 @@ table{
     }
 
     .video__Izq{
-        width: 80%;
-        /* margin-left: 50px; */
+        width: 50%;
+        margin-left: 25%;
     }
 
     .video__Cen{
-        width: 80%;
-        /* margin-left: 50px; */
+        width: 60%;
+        margin-left: 20%;
     }
 
     .video__Der{
-        width: 80%;
-        /* margin-left: 50px; */
+        width: 50%;
+        margin-left: 25%;
     }
 
     .fondo2{
@@ -602,10 +626,9 @@ table{
     .container{
         grid-template-rows: 280px 280px 280px;
         grid-template-columns: 1fr 1fr 1fr;
-        /* margin-left: 130px; */
-        width: 100%;
+        width: 70%;
         height: 430px;
-        margin-left: 0px;
+        margin-left: 15%;
         /* margin-top: 20px; */
         /* margin-bottom: 500px; */
     }
@@ -615,7 +638,13 @@ table{
     }
 
     .galeria{
-        width: 100%;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .galeria .galeria{
+        text-align: center;
+
     }
 
     footer{
@@ -728,18 +757,18 @@ table{
     }
 
     .video__Cen{
-        width: 80%;
+        width: 50%;
         margin-top: 20px;
-        /* margin-left: 50px; */
+        margin-left: 25%;
     }
 
     .video__Izq{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
     }
 
     .video__Der{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
         margin-top: 20px;
     }
@@ -747,7 +776,7 @@ table{
     .container{
         grid-template-rows: 180px 180px 180px;
         grid-template-columns: 1fr 1fr 1fr;
-        /* margin-left: 130px; */
+        margin-left: 100px;
         width: 80%;
         /* height: 80%; */
         /* margin-top: 20px; */
@@ -759,7 +788,7 @@ table{
     }
 
     .galeria{
-        width: 80%;
+        width: 50%;
     }
 
     footer{
@@ -848,6 +877,7 @@ table{
     width: 100%;
     }
 
+
     .contenedor{
         width: 100%;
     }
@@ -882,12 +912,14 @@ table{
 
     
     .menu-horizontal a{
-        font-size: 10px;
+        font-size: 5px;
         text-align: center;
     }
-    .menu-horizontal li a{
+    nav a{
         padding: 0px 0px;
+        font-size: 10px;
     }
+
 
 
     .fondo{
@@ -904,18 +936,18 @@ table{
     }
 
     .video__Cen{
-        width: 80%;
+        width: 50%;
         margin-top: 20px;
-        /* margin-left: 20px; */
+        margin-left: 25%;
     }
 
     .video__Izq{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
     }
 
     .video__Der{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
         margin-top: 10px;
     }
@@ -924,7 +956,7 @@ table{
         grid-template-rows: 170px 170px 170px;
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 70px;
-        width: 70%;
+        width: 73%;
         height: 430px;
         margin-top: 20px;
         margin-bottom: 120px;
@@ -935,11 +967,15 @@ table{
     }
 
     .galeria{
-        width: 83%;
+        width: 50%;
+    }
+
+    .galeria .galeria{
+        font-size: 15px;
     }
 
     footer{
-        width: 103%;
+        width: 100%;
         justify-content: space-between;
         text-align: center;
     }
@@ -994,7 +1030,7 @@ table{
 
 @media (max-width: 480px) {
     header{
-        width: 103%;
+        width: 100%;
     }
 
     
@@ -1008,31 +1044,31 @@ table{
 
 
     .fondo{
-        width: 103%;
+        width: 100%;
     }
 
     .video{
-        width: 103%;
+        width: 100%;
         /* margin-left: 30px; */
     }
 
     .fondo2{
-        width: 103%;
+        width: 100%;
     }
 
     .video__Cen{
-        width: 80%;
+        width: 50%;
         margin-top: 20px;
-        /* margin-left: 20px; */
+        margin-left: 25%;
     }
 
     .video__Izq{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
     }
 
     .video__Der{
-        width: 80%;
+        width: 50%;
         /* margin-left: 50px; */
         margin-top: 10px;
     }
@@ -1052,11 +1088,19 @@ table{
     }
 
     .galeria{
-        width: 83%;
+        width: 30%;
+        margin-left: 30%;
     }
 
+    .galeria .galeria{
+        font-size: 15px;
+        
+    }
+
+
+
     footer{
-        width: 103%;
+        width: 100%;
         justify-content: space-between;
         text-align: center;
     }
@@ -1077,11 +1121,11 @@ table{
 
     
     .titulo2{
-        width: 103%;
+        width: 100%;
     }
 
     .contenedor{
-        width: 103%;
+        width: 100%;
     }
 
     .contenedor p{
@@ -1089,11 +1133,11 @@ table{
     }
 
     p.integrantes{
-        width: 103%;
+        width: 100%;
     }
 
     div.foto{
-        width: 103%;
+        width: 100%;
         margin-right: 500px;
     }
 
@@ -1107,7 +1151,7 @@ table{
 /* ------------------------------------------------------nosotros----------------------------------------------------- */
 
 .parrafo{
-    width: 103%;
+    width: 100%;
 }
 
 .tabla__txtTitulo{
@@ -1150,41 +1194,65 @@ table{
     }
 
     .menu-horizontal a{
-        font-size: 10px;
+        font-size: 7px;
         text-align: center;
     }
-    .menu-horizontal li a{
-        padding: 5px 3px;
-    }
+
 
     header{
-        width: 320px;
+        width: 100%;
     }
 
 
     .fondo{
-        width: 300px;
+        width: 90%;
+    }
+
+    .subtitulo{
+        font-size: 15px;
     }
 
     .video{
-        width: 300px;
+        width: 100%;
+    }
+
+    .videos{
+        width: 50%;
     }
     
     .fondo2{
-        width: 300px;
+        width: 90%;
     }
 
+    .fondo2 .titulo{
+        font-size: 15px;
+    }
+
+    
+    .principal{
+        width: 100%;
+        height: 100%;
+    }
+
+    div.galeria{
+        width: 50%;
+        margin-left: 20%;
+    }
     .galeria{
-        width: 200px;
+        width: 100%;
+    }
+
+    .galeria .galeria{
+        font-size: 15px;
     }
 
     .container{
         grid-template-rows: 130px 130px 130px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2px;
-        width: 300px;
-        height: 430px;
-        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
         margin-top: 50px;
     }
 
@@ -1193,24 +1261,27 @@ table{
     }
 
     .video__Cen{
-        width: 200px;
+        width: 150%;
+        height: 150%;
+        margin-left: 30%;
         margin-top: 20px;
-        margin-left: 30px;
     }
 
     .video__Izq{
-        width: 200px;
-        margin-left: 30px;
+        width: 150%;
+        height: 150%;
+        margin-left: 30%;
     }
 
     .video__Der{
-        width: 200px;
-        margin-left: 30px;
+        width: 150%;
+        height: 150%;
+        margin-left: 30%;
         margin-top: 20px;
     }
 
     footer{
-        width: 320px;
+        width: 100%;
         justify-content: space-between;
         text-align: center;
     }
@@ -1229,11 +1300,11 @@ table{
     /* ---------------------------------------------index------------------------------------------------------------ */
 
     .titulo2{
-        width: 310px;
+        width: 100%;
     }
 
     .contenedor{
-        width: 310px;
+        width: 100%;
     }
 
     .contenedor p{
@@ -1241,11 +1312,11 @@ table{
     }
 
     p.integrantes{
-        width: 310px;
+        width: 100%;
     }
 
     div.foto{
-        width: 310px;
+        width: 100%;
         margin-right: 500px;
     }
 
@@ -1286,6 +1357,12 @@ table{
     }
 
     /* --------------------------------------------Fechas------------------------------------------------------------- */
+
+/* --------------------------------- tineda --------------------------------- */
+p.tienda{
+    font-size: 15px;
+}
+
 }
 
 /* ----------------------------------------------320px-------------------------------------------------------------- */
