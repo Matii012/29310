@@ -1,1368 +1,1171 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* -------------------------------------------------------------------------- */
+/*                                  variables                                 */
+/* -------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: rgb(28, 146, 28);
-    position: sticky;
-    top: 0;
-    right: 0;
-    z-index: 999;
+header {
+  background-color: rgb(28, 146, 28);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }
 
-.logo img{
-    height: 100px;
-    display: flex;
-    float: left;
+.logo img {
+  height: 100px;
+  display: flex;
+  float: left;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo h1{
-    padding-right: 90px;
-    padding-top: 40px;
-    display: flex;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+.logo h1 {
+  padding-right: 90px;
+  padding-top: 40px;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
-.logo a{
-    text-decoration: none;
-    color: #333;
+.logo a {
+  text-decoration: none;
+  color: #333;
 }
 
-.logo a:hover{
-    color: white;
+.logo a:hover {
+  color: white;
 }
 
-nav{
-    background-color: rgb(51, 51, 51);
+nav {
+  background-color: rgb(51, 51, 51);
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
-nav a:hover{
-    background-color: rgba(0, 0, 0, 0.274);
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.274);
 }
 
-.menu-horizontal{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu-horizontal li a{
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;  
+.menu-horizontal li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
 }
 
-.menu-horizontal li:hover{
-    background-color: red;
+.menu-horizontal li:hover {
+  background-color: red;
 }
 
-body{
-    background-image: url(../img/logo\ Cola\ De\ Sapo\ Con\ Fondo.png);
-    background-size: cover;
-    height: 500px;
-    
-    background-attachment: fixed;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-    
-
+body {
+  background-image: url(../img/logo\ Cola\ De\ Sapo\ Con\ Fondo.png);
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main{
-    
-    min-height: 240vh
-    
-}
-.subtitulo{
-    text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: wheat;
-    margin-top: 50px;
+main {
+  min-height: 240vh;
 }
 
-.fondo{
-    background-color: rgba(0, 0, 0, 0.377);
+.subtitulo {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: wheat;
+  margin-top: 50px;
 }
 
-.video{
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
+.fondo {
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
-h2.titulo{
-    text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: bold; line-height: 22.4px;
-    margin-top: 20px;
-    color: wheat;
-    margin-bottom: 20px;
+.video {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.fondo2{
-    background-color: rgba(0, 0, 0, 0.219);
+h2.titulo {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 22.4px;
+  margin-top: 20px;
+  color: wheat;
+  margin-bottom: 20px;
 }
 
-.video__Izq{
-    text-align: left;
-    margin-right: 30px;
-    margin-left: 75px;
-    height: 300px;
-
+.fondo2 {
+  background-color: rgba(0, 0, 0, 0.219);
 }
 
-.video__Cen{
-    text-align: center;
-    margin-right: 30px;
-    height: 300px;
-    width: 500px;
+.video__Izq {
+  text-align: left;
+  margin-right: 30px;
+  margin-left: 75px;
+  height: 300px;
 }
 
-.video__Der{
-    text-align: right;
-    height: 300px;
+.video__Cen {
+  text-align: center;
+  margin-right: 30px;
+  height: 300px;
+  width: 500px;
 }
 
-.galeria{
-    margin: 30px;
-    background-color: rgba(0, 0, 0, 0.377);
+.video__Der {
+  text-align: right;
+  height: 300px;
 }
 
-h2.galeria{
-    text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: wheat;
+.galeria {
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
-
-.container {  display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-auto-flow: row;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    margin-right: 35%;
-    grid-gap: 10px;
-    grid-template-areas:
-    "img img img2"
-    "img img img3"
-    "img4 img4 img5";
+h2.galeria {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: wheat;
 }
 
-.img { grid-area: img;
-        background-image: url(../img/todos.png);
-        background-position: center;
-        background-size: cover;
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-auto-flow: row;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin-right: 35%;
+  grid-gap: 10px;
+  grid-template-areas: "img img img2" "img img img3" "img4 img4 img5";
 }
 
-.img2 { grid-area: img2;
-            background-image: url(../img/baterista.png);
-            background-position: center;
-            background-size: cover;
+.img {
+  grid-area: img;
+  background-image: url(../img/todos.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.img3 { grid-area: img3;
-        background-image: url(../img/bajista.png);
-        background-position: center;
-        background-size: cover;
+.img2 {
+  grid-area: img2;
+  background-image: url(../img/baterista.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.img4 { grid-area: img4;
-        background-image: url(../img/cantante1.JPG);
-        background-position: center;
-        background-size: cover;
+.img3 {
+  grid-area: img3;
+  background-image: url(../img/bajista.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.img5 { grid-area: img5;
-    background-image: url(../img/pianista.png);
-    background-position: center;
-    background-size: cover;
+.img4 {
+  grid-area: img4;
+  background-image: url(../img/cantante1.JPG);
+  background-position: center;
+  background-size: cover;
 }
 
-.item{
-    border: 2px solid wheat;
-    border-radius: 2%;
-    filter: grayscale(100%);
-    transition: all 0.7s;
+.img5 {
+  grid-area: img5;
+  background-image: url(../img/pianista.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.item:hover{
-    transform:scale(1.05);
-    filter: grayscale(0%);
+.item {
+  border: 2px solid wheat;
+  border-radius: 2%;
+  filter: grayscale(100%);
+  transition: all 0.7s;
 }
 
-footer{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 30px;
-    background-color: rgb(28, 146, 28);
+.item:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
 }
 
-footer a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+  background-color: rgb(28, 146, 28);
 }
 
-.fa-youtube{
-    color: red;
-    font-size: 45px;
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
-.fa-instagram{
-    color: blueviolet;
-    font-size: 45px;
+.fa-youtube {
+  color: red;
+  font-size: 45px;
 }
 
-footer i:hover{
-    color: wheat;
+.fa-instagram {
+  color: blueviolet;
+  font-size: 45px;
 }
 
-
-
-
-
+footer i:hover {
+  color: wheat;
+}
 
 /* ------------------------------------------------ index ----------------------------------------------- */
-
-
-
-p.titulo2{
-    text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    background-color: rgba(0, 0, 0, 0.219);
-    color: wheat;
-    margin-top: 20px;
+p.titulo2 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  background-color: rgba(0, 0, 0, 0.219);
+  color: wheat;
+  margin-top: 20px;
 }
 
-div.contenedor{
-    background-color: rgba(0, 0, 0, 0.205);
-    padding-top: 20px;
+div.contenedor {
+  background-color: rgba(0, 0, 0, 0.205);
+  padding-top: 20px;
 }
 
-p.biografia{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    text-align: center;
-    color: white;
+p.biografia {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+  color: white;
 }
 
-p.banda{
-    margin-top: 30px;
-    text-align: left;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 22px;
-    color: wheat;
+p.banda {
+  margin-top: 30px;
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 22px;
+  color: wheat;
 }
 
-
-p.texto{
-    text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 22px;
-    color: white;
-    margin-top: 40px;
+p.texto {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 22px;
+  color: white;
+  margin-top: 40px;
 }
 
-div.foto{
-    display: flex;
-    justify-content: center;
-    /* margin: 20px 20px; */
-    background-color: rgba(0, 0, 0, 0.212);
-    /* float: left; */
+div.foto {
+  display: flex;
+  justify-content: center;
+  /* margin: 20px 20px; */
+  background-color: rgba(0, 0, 0, 0.212);
+  /* float: left; */
 }
 
-p.integrantes{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: wheat;
-    text-align: center;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.219);
+p.integrantes {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: wheat;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.219);
 }
 
 /* ----------------------------------------------- Nosotros --------------------------------------------------- */
-
-
-table{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+table {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.tabla__txtTitulo{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: greenyellow;
-    border: solid 2.5px rgb(77, 15, 15);
-    background-color: #333;
+.tabla__txtTitulo {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: greenyellow;
+  border: solid 2.5px rgb(77, 15, 15);
+  background-color: #333;
 }
 
-.tabla__txtDer{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    border: solid 2.5px rgb(77, 15, 15);
-    background-color: #333;
-    color: red;
+.tabla__txtDer {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  border: solid 2.5px rgb(77, 15, 15);
+  background-color: #333;
+  color: red;
 }
 
-.tabla__txtCen{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    border: solid 2.5px rgb(77, 15, 15);
-    background-color: #333;
-    color: red;
+.tabla__txtCen {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  border: solid 2.5px rgb(77, 15, 15);
+  background-color: #333;
+  color: red;
 }
 
-.tabla__txtIzq{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: red;
-    background-color: #333;
-    border: solid 2.5px rgb(77, 15, 15);
-}
-  
-p.fechas{
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: wheat;
-    text-align: center;
-    margin-top: 20px 20px;
-    padding: 50px 30px;
-
-
+.tabla__txtIzq {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: red;
+  background-color: #333;
+  border: solid 2.5px rgb(77, 15, 15);
 }
 
-.parrafo{
-    background-color: rgba(0, 0, 0, 0.205);
+p.fechas {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: wheat;
+  text-align: center;
+  margin-top: 20px 20px;
+  padding: 50px 30px;
 }
 
-
-.lugar{
-    font-size: 30px;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-    font-weight: 700;
-    text-shadow: 0px 0px 15px black;
-    color: wheat;
-    text-align: center;
-    margin-top: 20px;
+.parrafo {
+  background-color: rgba(0, 0, 0, 0.205);
 }
 
-
-
-.carousel-inner img{
-    width: 10px;
-    height: 500px;
+.lugar {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 0px 15px black;
+  color: wheat;
+  text-align: center;
+  margin-top: 20px;
 }
 
+.carousel-inner img {
+  width: 10px;
+  height: 500px;
+}
 
 /* -------------------------------------------------- Fechas --------------------------------------------------------- */
-
-textarea{
-    resize: none;
+textarea {
+  resize: none;
 }
 
 /* ------------------------------- contactanos ------------------------------ */
-
-.tienda{
-    font-size: 50px;
-    text-align: center;
-    background-color: rgba(51, 51, 51, 0.452);
-    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-    font-style: italic;
-    font-variant: normal; font-weight: 700;
-    color: wheat;
+.tienda {
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.452);
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  color: wheat;
 }
 
 /* --------------------------------- tienda --------------------------------- */
-
 /* media queries */
-
 /* --------------------------------------------------Media Queries--------------------------------------------- */
-
-
-@media (max-width:1200px) {
-    .container{
-        grid-template-rows: 200px 200px 200px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 17em;
-        grid-gap: 5px;
-        width: 40em;
-        height: 430px;
-        margin-top: 20px;
-        margin-bottom: 190px;
-    }
-
-    
-    .video__Izq{
-        width: 40em;
-        margin-left: 17em;
-        margin-top: 20px;
-    }
-
-    .video__Cen{
-        width: 40em;
-        margin-left: 17em;
-        margin-top: 20px;
-    }
-
-    .video__Der{
-        width: 40em;
-        margin-left: 17em;
-        margin-top: 20px;
-    }
+@media (max-width: 1200px) {
+  .container {
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 17em;
+    grid-gap: 5px;
+    width: 40em;
+    height: 430px;
+    margin-top: 20px;
+    margin-bottom: 190px;
+  }
+  .video__Izq {
+    width: 40em;
+    margin-left: 17em;
+    margin-top: 20px;
+  }
+  .video__Cen {
+    width: 40em;
+    margin-left: 17em;
+    margin-top: 20px;
+  }
+  .video__Der {
+    width: 40em;
+    margin-left: 17em;
+    margin-top: 20px;
+  }
 }
-
 /* ------------------------------------------------------1024px----------------------------------------------------- */
-@media (max-width:1024px) {
-    header{
-        width: 100%;
-    }
-
-    
-    .menu-horizontal a{
-        font-size: 20px;
-        text-align: center;
-    }
-    .menu-horizontal li a{
-        padding: 5px 5px;
-    }
-
-
-    .fondo{
-        width: 100%;
-    }
-
-    .video{
-        width: 100%;
-        /* margin-left: 100px; */
-    }
-
-    .video__Izq{
-        width: 50%;
-        /* margin-left: 100px; */
-    }
-
-    .video__Cen{
-        width: 50%;
-        /* margin-left: 100px; */
-    }
-
-    .video__Der{
-        width: 50%;
-        /* margin-left: 100px; */
-    }
-
-    .fondo2{
-        width: 100%;
-    }
-
-
-    .container{
-        grid-template-rows: 350px 350px 350px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 5%;
-        width: 100%;
-        height: 430px;
-        margin-top: 20px;
-        margin-bottom: 700px;
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .galeria{
-        width: 50%;
-        margin-left: 25%;
-    }
-
-
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 30px;
-    }
-
-    .fa-youtube{
-        font-size: 30px;
-    }
-
-    .fa-instagram{
-        font-size: 30px;
-    }
-/* ---------------------------------------------------index--------------------------------------------------------- */
-
-.titulo2{
+@media (max-width: 1024px) {
+  header {
     width: 100%;
-    }
-
-    .contenedor{
-        width: 100%;
-    }
-
-    
-    .contenedor p{
-        font-size: 18px;
-    }
-
-    p.integrantes{
-        width: 100%;
-    }
-
-    div.foto{
-        width: 100%;
-        margin-right: 500px;
-    }
-
-    p.texto{
-        font-size: 18px;
-    }
-
-    p.banda{
-        font-size: 18px;
-    }
-/* ----------------------------------------------------nosotros------------------------------------------------------ */
-
-
-    
-.parrafo{
+  }
+  .menu-horizontal a {
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu-horizontal li a {
+    padding: 5px 5px;
+  }
+  .fondo {
     width: 100%;
-}
-
-table{
+  }
+  .video {
     width: 100%;
-}
-
-.tabla__txtTitulo{
+    /* margin-left: 100px; */
+  }
+  .video__Izq {
+    width: 50%;
+    /* margin-left: 100px; */
+  }
+  .video__Cen {
+    width: 50%;
+    /* margin-left: 100px; */
+  }
+  .video__Der {
+    width: 50%;
+    /* margin-left: 100px; */
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .container {
+    grid-template-rows: 350px 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5%;
+    width: 100%;
+    height: 430px;
+    margin-top: 20px;
+    margin-bottom: 700px;
+  }
+  .item {
+    filter: none;
+  }
+  .galeria {
+    width: 50%;
+    margin-left: 25%;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 30px;
+  }
+  .fa-youtube {
+    font-size: 30px;
+  }
+  .fa-instagram {
+    font-size: 30px;
+  }
+  /* ---------------------------------------------------index--------------------------------------------------------- */
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
+    font-size: 18px;
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 18px;
+  }
+  p.banda {
+    font-size: 18px;
+  }
+  /* ----------------------------------------------------nosotros------------------------------------------------------ */
+  .parrafo {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .tabla__txtTitulo {
     font-size: 20px;
-}
-
-.tabla__txtIzq{
+  }
+  .tabla__txtIzq {
     font-size: 20px;
-}
-
-
-.tabla__txtCen{
+  }
+  .tabla__txtCen {
     font-size: 20px;
-}
-
-
-.tabla__txtDer{
+  }
+  .tabla__txtDer {
     font-size: 20px;
+  }
 }
-
-
-}
-
-
-
-
-
-
 /* ------------------------------------------------1023px------------------------------------------------------------ */
-@media (max-width:1023px) {
-    header{
-        width: 100%;
-    }
-
-    
-    .menu-horizontal a{
-        font-size: 20px;
-        text-align: center;
-    }
-    .menu-horizontal li a{
-        padding: 5px 5px;
-    }
-
-
-    .fondo{
-        width: 100%;
-    }
-
-    .video{
-        width: 100%;
-        /* margin-left: 30px; */
-    }
-
-    .video__Izq{
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    .video__Cen{
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .video__Der{
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    .fondo2{
-        width: 100%;
-    }
-
-    .video__Izq{
-        background-color: red;
-    }
-
-    .container{
-        grid-template-rows: 280px 280px 280px;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 70%;
-        height: 430px;
-        margin-left: 15%;
-        /* margin-top: 20px; */
-        /* margin-bottom: 500px; */
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .galeria{
-        width: 50%;
-        margin-left: 25%;
-    }
-
-    .galeria .galeria{
-        text-align: center;
-
-    }
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 15px;
-    }
-
-    .fa-youtube{
-        font-size: 15px;
-    }
-
-    .fa-instagram{
-        font-size: 15px;
-    }
-    /* -----------------------------------------------index----------------------------------------------------------- */
-
-    .titulo2{
-        width: 100%;
-        }
-    
-        .contenedor{
-            width: 100%;
-        }
-    
-        
-        .contenedor p{
-            font-size: 18px;
-        }
-    
-        p.integrantes{
-            width: 100%;
-        }
-    
-        div.foto{
-            width: 100%;
-            margin-right: 500px;
-        }
-    
-        p.texto{
-            font-size: 18px;
-        }
-    
-        p.banda{
-            font-size: 18px;
-        }
-    /* ---------------------------------------------------nosotros---------------------------------------------------- */
-
-    
-.parrafo{
+@media (max-width: 1023px) {
+  header {
     width: 100%;
-}
-
-table{
+  }
+  .menu-horizontal a {
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu-horizontal li a {
+    padding: 5px 5px;
+  }
+  .fondo {
     width: 100%;
-}
-
-.tabla__txtTitulo{
+  }
+  .video {
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  .video__Izq {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .video__Cen {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .video__Der {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .video__Izq {
+    background-color: red;
+  }
+  .container {
+    grid-template-rows: 280px 280px 280px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    height: 430px;
+    margin-left: 15%;
+    /* margin-top: 20px; */
+    /* margin-bottom: 500px; */
+  }
+  .item {
+    filter: none;
+  }
+  .galeria {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .galeria .galeria {
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .fa-youtube {
+    font-size: 15px;
+  }
+  .fa-instagram {
+    font-size: 15px;
+  }
+  /* -----------------------------------------------index----------------------------------------------------------- */
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
+    font-size: 18px;
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 18px;
+  }
+  p.banda {
+    font-size: 18px;
+  }
+  /* ---------------------------------------------------nosotros---------------------------------------------------- */
+  .parrafo {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .tabla__txtTitulo {
     font-size: 30px;
-}
-
-.tabla__txtIzq{
+  }
+  .tabla__txtIzq {
     font-size: 30px;
-}
-
-
-.tabla__txtCen{
+  }
+  .tabla__txtCen {
     font-size: 30px;
-}
-
-
-.tabla__txtDer{
+  }
+  .tabla__txtDer {
     font-size: 30px;
+  }
 }
-
-}
-
-
 /* -----------------------------------------------768px-------------------------------------------------------------- */
-@media (max-width:768px) {
-    header{
-        width: 100%;
-    }
-
-    
-    .menu-horizontal a{
-        font-size: 20px;
-        text-align: center;
-    }
-    .menu-horizontal li a{
-        padding: 5px 5px;
-    }
-
-
-    .fondo{
-        width: 100%;
-    }
-
-    .video{
-        width: 100%;
-        /* margin-left: 30px; */
-    }
-
-    .fondo2{
-        width: 100%;
-    }
-
-    .video__Cen{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25%;
-    }
-
-    .video__Izq{
-        width: 50%;
-        /* margin-left: 50px; */
-    }
-
-    .video__Der{
-        width: 50%;
-        /* margin-left: 50px; */
-        margin-top: 20px;
-    }
-    
-    .container{
-        grid-template-rows: 180px 180px 180px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 100px;
-        width: 80%;
-        /* height: 80%; */
-        /* margin-top: 20px; */
-        /* margin-bottom: 500px; */
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .galeria{
-        width: 50%;
-    }
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 15px;
-    }
-
-    .fa-youtube{
-        font-size: 15px;
-    }
-
-    .fa-instagram{
-        font-size: 15px;
-    }
-/* ---------------------------------------------------------index----------------------------------------------------- */
-.titulo2{
+@media (max-width: 768px) {
+  header {
     width: 100%;
-    }
-
-    .contenedor{
-        width: 100%;
-    }
-
-    
-    .contenedor p{
-        font-size: 18px;
-    }
-
-    p.integrantes{
-        width: 100%;
-    }
-
-    div.foto{
-        width: 100%;
-        margin-right: 500px;
-    }
-
-    p.texto{
-        font-size: 18px;
-    }
-
-    p.banda{
-        font-size: 18px;
-    }
-
-    /* -----------------------------------------------------nosotros------------------------------------------------- */
-
-    
-    .parrafo{
-        width: 100%;
-    }
-    
-    table{
-        width: 100%;
-    }
-    
-    .tabla__txtTitulo{
-        font-size: 18px;
-    }
-    
-    .tabla__txtIzq{
-        font-size: 18px;
-    }
-    
-    
-    .tabla__txtCen{
-        font-size: 18px;
-    }
-    
-    
-    .tabla__txtDer{
-        font-size: 18px;
-    }
-
-    /* -----------------------------------------------------768px---------------------------------------------------- */
-}
-
-
-@media (max-width:600px) {
-    .titulo2{
+  }
+  .menu-horizontal a {
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu-horizontal li a {
+    padding: 5px 5px;
+  }
+  .fondo {
     width: 100%;
-    }
-
-
-    .contenedor{
-        width: 100%;
-    }
-
-    
-    .contenedor p{
-        font-size: 18px;
-    }
-
-    p.integrantes{
-        width: 100%;
-    }
-
-    div.foto{
-        width: 100%;
-        margin-right: 500px;
-    }
-
-    p.texto{
-        font-size: 18px;
-    }
-
-    p.banda{
-        font-size: 18px;
-    }
-
-    /* ------------------------------------------------nosotros------------------------------------------------------- */
-
-    header{
-        width: 100%;
-    }
-
-    
-    .menu-horizontal a{
-        font-size: 5px;
-        text-align: center;
-    }
-    nav a{
-        padding: 0px 0px;
-        font-size: 10px;
-    }
-
-
-
-    .fondo{
-        width: 100%;
-    }
-
-    .video{
-        width: 100%;
-        /* margin-left: 30px; */
-    }
-
-    .fondo2{
-        width: 100%;
-    }
-
-    .video__Cen{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25%;
-    }
-
-    .video__Izq{
-        width: 50%;
-        /* margin-left: 50px; */
-    }
-
-    .video__Der{
-        width: 50%;
-        /* margin-left: 50px; */
-        margin-top: 10px;
-    }
-    
-    .container{
-        grid-template-rows: 170px 170px 170px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 70px;
-        width: 73%;
-        height: 430px;
-        margin-top: 20px;
-        margin-bottom: 120px;
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .galeria{
-        width: 50%;
-    }
-
-    .galeria .galeria{
-        font-size: 15px;
-    }
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 15px;
-    }
-
-    .fa-youtube{
-        font-size: 15px;
-    }
-
-    .fa-instagram{
-        font-size: 15px;
-    }
-
-
-    
-    /* ---------------------------------- index --------------------------------- */
-
-    .parrafo{
-        width: 100%;
-    }
-    
-    table{
-        width: 100%;
-    }
-    
-    .tabla__txtTitulo{
-        font-size: 18px;
-    }
-    
-    .tabla__txtIzq{
-        font-size: 18px;
-    }
-    
-    
-    .tabla__txtCen{
-        font-size: 18px;
-    }
-    
-    
-    .tabla__txtDer{
-        font-size: 18px;
-    }
+  }
+  .video {
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .video__Cen {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+  .video__Izq {
+    width: 50%;
+    /* margin-left: 50px; */
+  }
+  .video__Der {
+    width: 50%;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+  }
+  .container {
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+    width: 80%;
+    /* height: 80%; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 500px; */
+  }
+  .item {
+    filter: none;
+  }
+  .galeria {
+    width: 50%;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .fa-youtube {
+    font-size: 15px;
+  }
+  .fa-instagram {
+    font-size: 15px;
+  }
+  /* ---------------------------------------------------------index----------------------------------------------------- */
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
+    font-size: 18px;
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 18px;
+  }
+  p.banda {
+    font-size: 18px;
+  }
+  /* -----------------------------------------------------nosotros------------------------------------------------- */
+  .parrafo {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .tabla__txtTitulo {
+    font-size: 18px;
+  }
+  .tabla__txtIzq {
+    font-size: 18px;
+  }
+  .tabla__txtCen {
+    font-size: 18px;
+  }
+  .tabla__txtDer {
+    font-size: 18px;
+  }
+  /* -----------------------------------------------------768px---------------------------------------------------- */
 }
-
+@media (max-width: 600px) {
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
+    font-size: 18px;
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 18px;
+  }
+  p.banda {
+    font-size: 18px;
+  }
+  /* ------------------------------------------------nosotros------------------------------------------------------- */
+  header {
+    width: 100%;
+  }
+  .menu-horizontal a {
+    font-size: 5px;
+    text-align: center;
+  }
+  nav a {
+    padding: 0px 0px;
+    font-size: 10px;
+  }
+  .fondo {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .video__Cen {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+  .video__Izq {
+    width: 50%;
+    /* margin-left: 50px; */
+  }
+  .video__Der {
+    width: 50%;
+    /* margin-left: 50px; */
+    margin-top: 10px;
+  }
+  .container {
+    grid-template-rows: 170px 170px 170px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 70px;
+    width: 73%;
+    height: 430px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+  }
+  .item {
+    filter: none;
+  }
+  .galeria {
+    width: 50%;
+  }
+  .galeria .galeria {
+    font-size: 15px;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .fa-youtube {
+    font-size: 15px;
+  }
+  .fa-instagram {
+    font-size: 15px;
+  }
+  /* ---------------------------------- index --------------------------------- */
+  .parrafo {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .tabla__txtTitulo {
+    font-size: 18px;
+  }
+  .tabla__txtIzq {
+    font-size: 18px;
+  }
+  .tabla__txtCen {
+    font-size: 18px;
+  }
+  .tabla__txtDer {
+    font-size: 18px;
+  }
+}
 /* ---------------------------------------------------600px---------------------------------------------------------- */
-
-
-
-
 @media (max-width: 480px) {
-    header{
-        width: 100%;
-    }
-
-    
-    .menu-horizontal a{
-        font-size: 10px;
-        text-align: center;
-    }
-    .menu-horizontal li a{
-        padding: 0px 0px;
-    }
-
-
-    .fondo{
-        width: 100%;
-    }
-
-    .video{
-        width: 100%;
-        /* margin-left: 30px; */
-    }
-
-    .fondo2{
-        width: 100%;
-    }
-
-    .video__Cen{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25%;
-    }
-
-    .video__Izq{
-        width: 50%;
-        /* margin-left: 50px; */
-    }
-
-    .video__Der{
-        width: 50%;
-        /* margin-left: 50px; */
-        margin-top: 10px;
-    }
-    
-    .container{
-        grid-template-rows: 170px 170px 170px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 70px;
-        width: 70%;
-        height: 430px;
-        margin-top: 20px;
-        margin-bottom: 120px;
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .galeria{
-        width: 30%;
-        margin-left: 30%;
-    }
-
-    .galeria .galeria{
-        font-size: 15px;
-        
-    }
-
-
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 15px;
-    }
-
-    .fa-youtube{
-        font-size: 15px;
-    }
-
-    .fa-instagram{
-        font-size: 15px;
-    }
-
-    /* ------------------------------------------------------index---------------------------------------------------- */
-
-    
-    .titulo2{
-        width: 100%;
-    }
-
-    .contenedor{
-        width: 100%;
-    }
-
-    .contenedor p{
-        font-size: 10px;
-    }
-
-    p.integrantes{
-        width: 100%;
-    }
-
-    div.foto{
-        width: 100%;
-        margin-right: 500px;
-    }
-
-    p.texto{
-        font-size: 15px;
-    }
-
-    p.banda{
-        font-size: 15px;
-    }
-/* ------------------------------------------------------nosotros----------------------------------------------------- */
-
-.parrafo{
+  header {
     width: 100%;
-}
-
-.tabla__txtTitulo{
+  }
+  .menu-horizontal a {
     font-size: 10px;
-}
-
-.tabla__txtIzq{
+    text-align: center;
+  }
+  .menu-horizontal li a {
+    padding: 0px 0px;
+  }
+  .fondo {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .video__Cen {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+  .video__Izq {
+    width: 50%;
+    /* margin-left: 50px; */
+  }
+  .video__Der {
+    width: 50%;
+    /* margin-left: 50px; */
+    margin-top: 10px;
+  }
+  .container {
+    grid-template-rows: 170px 170px 170px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 70px;
+    width: 70%;
+    height: 430px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+  }
+  .item {
+    filter: none;
+  }
+  .galeria {
+    width: 30%;
+    margin-left: 30%;
+  }
+  .galeria .galeria {
+    font-size: 15px;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .fa-youtube {
+    font-size: 15px;
+  }
+  .fa-instagram {
+    font-size: 15px;
+  }
+  /* ------------------------------------------------------index---------------------------------------------------- */
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
     font-size: 10px;
-}
-
-
-.tabla__txtCen{
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 15px;
+  }
+  p.banda {
+    font-size: 15px;
+  }
+  /* ------------------------------------------------------nosotros----------------------------------------------------- */
+  .parrafo {
+    width: 100%;
+  }
+  .tabla__txtTitulo {
     font-size: 10px;
-}
-
-
-.tabla__txtDer{
+  }
+  .tabla__txtIzq {
     font-size: 10px;
+  }
+  .tabla__txtCen {
+    font-size: 10px;
+  }
+  .tabla__txtDer {
+    font-size: 10px;
+  }
 }
-
-}
-
 /* ------------------------------------------------fechas------------------------------------------------------------- */
 /* --------------------------------------------------------480px--------------------------------------------------------*/
-
-@media (max-width:320px) {
-    .menu-horizontal{
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .logo{
-        display: flex;
+@media (max-width: 320px) {
+  .menu-horizontal {
+    justify-content: space-between;
+    display: flex;
+  }
+  .logo {
+    display: flex;
     align-items: center;
     justify-content: center;
-    }
-
-    .logo a{
-        text-align: center;
-    }
-
-    .menu-horizontal a{
-        font-size: 7px;
-        text-align: center;
-    }
-
-
-    header{
-        width: 100%;
-    }
-
-
-    .fondo{
-        width: 90%;
-    }
-
-    .subtitulo{
-        font-size: 15px;
-    }
-
-    .video{
-        width: 100%;
-    }
-
-    .videos{
-        width: 50%;
-    }
-    
-    .fondo2{
-        width: 90%;
-    }
-
-    .fondo2 .titulo{
-        font-size: 15px;
-    }
-
-    
-    .principal{
-        width: 100%;
-        height: 100%;
-    }
-
-    div.galeria{
-        width: 50%;
-        margin-left: 20%;
-    }
-    .galeria{
-        width: 100%;
-    }
-
-    .galeria .galeria{
-        font-size: 15px;
-    }
-
-    .container{
-        grid-template-rows: 130px 130px 130px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2px;
-        width: 100%;
-        height: 100%;
-        margin-left: 0%;
-        margin-top: 50px;
-    }
-
-    .item{
-        filter: none;
-    }
-
-    .video__Cen{
-        width: 150%;
-        height: 150%;
-        margin-left: 30%;
-        margin-top: 20px;
-    }
-
-    .video__Izq{
-        width: 150%;
-        height: 150%;
-        margin-left: 30%;
-    }
-
-    .video__Der{
-        width: 150%;
-        height: 150%;
-        margin-left: 30%;
-        margin-top: 20px;
-    }
-
-    footer{
-        width: 100%;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    footer a{
-        font-size: 15px;
-    }
-
-    .fa-youtube{
-        font-size: 15px;
-    }
-
-    .fa-instagram{
-        font-size: 15px;
-    }
-    /* ---------------------------------------------index------------------------------------------------------------ */
-
-    .titulo2{
-        width: 100%;
-    }
-
-    .contenedor{
-        width: 100%;
-    }
-
-    .contenedor p{
-        font-size: 10px;
-    }
-
-    p.integrantes{
-        width: 100%;
-    }
-
-    div.foto{
-        width: 100%;
-        margin-right: 500px;
-    }
-
-    p.texto{
-        font-size: 10px;
-    }
-
-    p.banda{
-        font-size: 10px;
-    }
-
-    /* ------------------------------------------Nosotros----------------------------------------------------------- */
-
-    table{
-        width: 300px;
-    }
-
-    .parrafo{
-        width: 310px;
-    }
-
-    .tabla__txtTitulo{
-        font-size: 10px;
-    }
-
-    .tabla__txtIzq{
-        font-size: 10px;
-    }
-
-
-    .tabla__txtCen{
-        font-size: 10px;
-    }
-
-
-    .tabla__txtDer{
-        font-size: 10px;
-    }
-
-    /* --------------------------------------------Fechas------------------------------------------------------------- */
-
-/* --------------------------------- tineda --------------------------------- */
-p.tienda{
+  }
+  .logo a {
+    text-align: center;
+  }
+  .menu-horizontal a {
+    font-size: 7px;
+    text-align: center;
+  }
+  header {
+    width: 100%;
+  }
+  .fondo {
+    width: 90%;
+  }
+  .subtitulo {
     font-size: 15px;
+  }
+  .video {
+    width: 100%;
+  }
+  .videos {
+    width: 50%;
+  }
+  .fondo2 {
+    width: 90%;
+  }
+  .fondo2 .titulo {
+    font-size: 15px;
+  }
+  .principal {
+    width: 100%;
+    height: 100%;
+  }
+  div.galeria {
+    width: 50%;
+    margin-left: 20%;
+  }
+  .galeria {
+    width: 100%;
+  }
+  .galeria .galeria {
+    font-size: 15px;
+  }
+  .container {
+    grid-template-rows: 130px 130px 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 50px;
+  }
+  .item {
+    filter: none;
+  }
+  .video__Cen {
+    width: 150%;
+    height: 150%;
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+  .video__Izq {
+    width: 150%;
+    height: 150%;
+    margin-left: 30%;
+  }
+  .video__Der {
+    width: 150%;
+    height: 150%;
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+  footer {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .fa-youtube {
+    font-size: 15px;
+  }
+  .fa-instagram {
+    font-size: 15px;
+  }
+  /* ---------------------------------------------index------------------------------------------------------------ */
+  .titulo2 {
+    width: 100%;
+  }
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor p {
+    font-size: 10px;
+  }
+  p.integrantes {
+    width: 100%;
+  }
+  div.foto {
+    width: 100%;
+    margin-right: 500px;
+  }
+  p.texto {
+    font-size: 10px;
+  }
+  p.banda {
+    font-size: 10px;
+  }
+  /* ------------------------------------------Nosotros----------------------------------------------------------- */
+  table {
+    width: 300px;
+  }
+  .parrafo {
+    width: 310px;
+  }
+  .tabla__txtTitulo {
+    font-size: 10px;
+  }
+  .tabla__txtIzq {
+    font-size: 10px;
+  }
+  .tabla__txtCen {
+    font-size: 10px;
+  }
+  .tabla__txtDer {
+    font-size: 10px;
+  }
+  /* --------------------------------------------Fechas------------------------------------------------------------- */
+  /* --------------------------------- tineda --------------------------------- */
+  p.tienda {
+    font-size: 15px;
+  }
 }
-
-}
-
-/* ----------------------------------------------320px-------------------------------------------------------------- */
+/* ----------------------------------------------320px-------------------------------------------------------------- *//*# sourceMappingURL=estilos.css.map */
