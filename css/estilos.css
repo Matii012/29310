@@ -1,6 +1,17 @@
 /* -------------------------------------------------------------------------- */
 /*                                  variables                                 */
 /* -------------------------------------------------------------------------- */
+.fa-youtube {
+  color: red;
+}
+
+.fa-instagram {
+  color: blueviolet;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  variables                                 */
+/* -------------------------------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -252,12 +263,10 @@ footer a {
 }
 
 .fa-youtube {
-  color: red;
   font-size: 45px;
 }
 
 .fa-instagram {
-  color: blueviolet;
   font-size: 45px;
 }
 
@@ -359,7 +368,7 @@ table {
   background-color: #333;
 }
 
-.tabla__txtDer {
+.tabla__txtDer, .tabla__txtIzq, .tabla__txtCen {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -369,30 +378,6 @@ table {
   border: solid 2.5px rgb(77, 15, 15);
   background-color: #333;
   color: red;
-}
-
-.tabla__txtCen {
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  border: solid 2.5px rgb(77, 15, 15);
-  background-color: #333;
-  color: red;
-}
-
-.tabla__txtIzq {
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  color: red;
-  background-color: #333;
-  border: solid 2.5px rgb(77, 15, 15);
 }
 
 p.fechas {
@@ -577,7 +562,7 @@ textarea {
   .tabla__txtCen {
     font-size: 20px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 20px;
   }
 }
@@ -690,7 +675,7 @@ textarea {
   .tabla__txtCen {
     font-size: 30px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 30px;
   }
 }
@@ -798,7 +783,7 @@ textarea {
   .tabla__txtCen {
     font-size: 18px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 18px;
   }
   /* -----------------------------------------------------768px---------------------------------------------------- */
@@ -910,7 +895,7 @@ textarea {
   .tabla__txtCen {
     font-size: 18px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 18px;
   }
 }
@@ -1019,7 +1004,7 @@ textarea {
   .tabla__txtCen {
     font-size: 10px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 10px;
   }
 }
@@ -1159,7 +1144,7 @@ textarea {
   .tabla__txtCen {
     font-size: 10px;
   }
-  .tabla__txtDer {
+  .tabla__txtDer, .tabla__txtCen, .tabla__txtIzq {
     font-size: 10px;
   }
   /* --------------------------------------------Fechas------------------------------------------------------------- */

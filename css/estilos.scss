@@ -7,6 +7,39 @@ $font1: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", T
 $color1: wheat;
 
 
+$redes: (
+        youtube: red,
+        instagram:  blueviolet,
+); 
+
+@each $red, $color in $redes {
+    .fa-#{$red} {
+        color: $color;
+    }
+}
+
+$estilos: (
+    centro: center,
+    tFuente: 25px,
+    50px : 50px
+);
+
+@mixin flex-space-between{
+	display:flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center{
+	display:flex;
+    justify-content: center;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  variables                                 */
+/* -------------------------------------------------------------------------- */
+
 *{
     padding: 0;
     margin: 0;
@@ -38,7 +71,11 @@ header{
     padding-top: 40px;
     display: flex;
     font-family: $font1;
-    font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-size: 25px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
 }
 
 .logo a{
@@ -66,8 +103,7 @@ nav a:hover{
 
 .menu-horizontal{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
 }
 
 .menu-horizontal li a{
@@ -101,11 +137,15 @@ main{
     
 }
 .subtitulo{
-    text-align: center;
+    text-align: map-get($estilos, centro);
     font-family:$font1; 
-    font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-size: map-get($estilos, tFuente); 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
     color: $color1;
-    margin-top: 50px;
+    margin-top: map-get($estilos, 50px);
 }
 
 .fondo{
@@ -114,13 +154,17 @@ main{
 
 .video{
     padding-top: 20px;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }
 
 h2.titulo{
-    text-align: center;
-    font-family:$font1; font-size: 25px; font-style: italic; font-variant: normal; font-weight: bold; line-height: 22.4px;
+    text-align: map-get($estilos, centro);
+    font-family:$font1; 
+    font-size: map-get($estilos, tFuente);
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: bold; 
+    line-height: 22.4px;
     margin-top: 20px;
     color: $color1;
     margin-bottom: 20px;
@@ -156,8 +200,15 @@ h2.titulo{
 }
 
 h2.galeria{
-    text-align: center;
-    font-family:$font1; font-size: 25px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: map-get($estilos, centro);
+    font-family:$font1; 
+    font-size: map-get($estilos, tFuente);
+    font-style: 
+    italic; 
+    font-variant: 
+    normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
     color: $color1;
 }
 
@@ -235,12 +286,12 @@ footer a{
 }
 
 .fa-youtube{
-    color: red;
+    // color: red;
     font-size: 45px;
 }
 
 .fa-instagram{
-    color: blueviolet;
+    // color: blueviolet;
     font-size: 45px;
 }
 
@@ -331,17 +382,11 @@ table{
 }
 
 .tabla__txtCen{
-    font-family:$font1; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    border: solid 2.5px rgb(77, 15, 15);
-    background-color: #333;
-    color: red;
+    @extend .tabla__txtDer
 }
 
 .tabla__txtIzq{
-    font-family:$font1; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    color: red;
-    background-color: #333;
-    border: solid 2.5px rgb(77, 15, 15);
+    @extend .tabla__txtDer
 }
 
 p.fechas{
