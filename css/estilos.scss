@@ -306,7 +306,9 @@ footer i:hover{
 
 /* ------------------------------------------------ index ----------------------------------------------- */
 
-
+span .color{
+    color: red;
+}
 
 p.titulo2{
     text-align: center;
@@ -430,17 +432,141 @@ textarea{
 
 /* ------------------------------- contactanos ------------------------------ */
 
-.tienda{
-    font-size: 50px;
-    text-align: center;
-    background-color: rgba(51, 51, 51, 0.452);
-    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-    font-style: italic;
-    font-variant: normal; font-weight: 700;
-    color: $color1;
+.tienda {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 290px;
+    height: 454px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 10rem;
+}
+
+.card-img {
+    background-color: #ffcaa6;
+    background-image: url(../img/remera.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-img2 {
+    background-color: #ffcaa6;
+    background-image: url(../img/buzo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-img2:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-img3 {
+    background-color: #ffcaa6;
+    background-image: url(../img/gorro.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-img3:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+}
+
+.texto3 {
+    font-family: bebas;
+    font-size: 25px;
+}
+
+.texto4 {
+    font-family: evogria italiana;
+    text-shadow: -2px 2px 10px #000000;
+}
+
+.color4 {
+    color: tomato;
+    font-style: bolder;
 }
 
 /* --------------------------------- tienda --------------------------------- */
+
+
+
 
 /* media queries */
 
@@ -1415,9 +1541,117 @@ table{
     /* --------------------------------------------Fechas------------------------------------------------------------- */
 
 /* --------------------------------- tineda --------------------------------- */
-p.tienda{
-    font-size: 15px;
 }
+@media (max-width:1200px) {
+    .card {
+        margin-bottom: 22rem;
+        margin-left: 2rem;
+    }
+
+}
+
+
+@media (max-width:1024px) {
+    .cuerpo-carta {
+        margin-bottom: 7rem;
+        margin-left: 2rem;
+    }
+
+}
+
+@media (max-width:1023px) {
+    .cuerpo-carta {
+        margin-bottom: 7rem;
+        margin-left: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    .card {
+        margin-bottom: 7rem;
+        margin-left: 2rem;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .card {
+        margin-bottom: 7rem;
+        margin-left: 2rem;
+        width: 290px;
+        height: 354px;
+    }
+
+    .texto3 {
+        font-size: 18px;
+    }
+
+    .texto4 {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .card {
+        margin-bottom: 9rem;
+        margin-left: 2rem;
+        width: 290px;
+        height: 280px;
+    }
+
+    .texto3 {
+        font-size: 12px;
+    }
+
+    .texto4 {
+        font-size: 10px;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+    }
+
+
+}
+
+@media (max-width:320px) {
+    .card {
+        margin-bottom: 12rem;
+        width: 290px;
+        height: 230px;
+    }
+
+    .text-title {
+        font-size: 8px;
+    }
+
+    .texto3 {
+        font-size: 8px;
+    }
+
+    .texto4 {
+        font-size: 5px;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-button {
+        height: 25px;
+        width: 25px;
+    }
 
 }
 
